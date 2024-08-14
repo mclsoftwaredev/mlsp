@@ -1,25 +1,4 @@
 services:
-
-  mysql:
-    image: 'mysql:latest'
-    environment:
-      - 'MYSQL_DATABASE=magdatabase'
-      - 'MYSQL_PASSWORD=magpwd'
-      - 'MYSQL_ROOT_PASSWORD=magpwd'
-      - 'MYSQL_USER=maguser'
-    ports:
-      - '3306'
-
-
-  postgres:
-    image: 'postgres:latest'
-    environment:
-      - 'POSTGRES_DB=magdatabase'
-      - 'POSTGRES_PASSWORD=magpwd'
-      - 'POSTGRES_USER=maguser'
-    ports:
-      - '5432'
-
   prometheus:
     container_name: prometheus
     image: prom/prometheus
@@ -32,6 +11,9 @@ services:
       - ./data/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
     ports:
       - "9090:9090"
+
+  #      links:
+  #        - node-exporter:node-exporter
 
 
   #  node-exporter:
