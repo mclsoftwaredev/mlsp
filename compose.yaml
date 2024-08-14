@@ -11,14 +11,14 @@ services:
       - '3306'
 
 
-  postgres:
-    image: 'postgres:latest'
-    environment:
-      - 'POSTGRES_DB=magdatabase'
-      - 'POSTGRES_PASSWORD=magpwd'
-      - 'POSTGRES_USER=maguser'
-    ports:
-      - '5432'
+#  postgres:
+#    image: 'postgres:latest'
+#    environment:
+#      - 'POSTGRES_DB=magdatabase'
+#      - 'POSTGRES_PASSWORD=magpwd'
+#      - 'POSTGRES_USER=maguser'
+#    ports:
+#      - '5432'
 
   prometheus:
     container_name: prometheus
