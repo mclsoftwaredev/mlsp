@@ -47,7 +47,7 @@ Prometheus: https://ibb.co/WshKmnz
 \
 Grafana Dashboard: https://ibb.co/N7tb5PK
 \
-Swagger API UI: https://ibb.co/J5L94nw
+Swagger API UI: https://ibb.co/GCs3wkr
 \
 API Example: https://ibb.co/bgYL3mn
 \
