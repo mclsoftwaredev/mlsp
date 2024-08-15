@@ -39,21 +39,22 @@ All Users in a given creation date range:  http://localhost:8080/mag/v1/user/sta
 \
 All Users with a given city: http://localhost:8080/mag/v1/user/city/Bern
 \
+\
 Here are some of the various aspects of the project:\
-![Docker containers](https://ibb.co/Tvcm1TC)
+Docker containers: https://ibb.co/Tvcm1TC
 \
-![Prometheus](https://ibb.co/WshKmnz)
+Prometheus: https://ibb.co/WshKmnz
 \
-![Grafana Dashboard](https://ibb.co/N7tb5PK)
+Grafana Dashboard: https://ibb.co/N7tb5PK
 \
-![Swagger API UI](https://ibb.co/J5L94nw)
+Swagger API UI: https://ibb.co/J5L94nw
 \
-![API Example](https://ibb.co/bgYL3mn)
+API Example: https://ibb.co/bgYL3mn
 \
-![Login](https://ibb.co/wgjdMX6)
+Login: https://ibb.co/wgjdMX6
 \
 \
-To answer the questions of the word doc:
+Now to answer the questions from the word doc:
 
 ## Answer the following questions:
 
