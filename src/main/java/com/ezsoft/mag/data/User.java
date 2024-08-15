@@ -1,21 +1,23 @@
 package com.ezsoft.mag.data;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
-import org.springframework.data.annotation.Id;
-import java.sql.Timestamp;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import lombok.Data;
 
-@Builder
-@Getter
-@Setter
+import java.sql.Date;
+
+@Entity
+@Data
 public class User {
-    @Id int id;
+    @Id
+    Long id;
     String firstname;
     String lastname;
     String email;
     String profession;
-    Timestamp dateCreated;
+    Date dateCreated;
     String country;
     String city;
+
+    public User() {}
 }
