@@ -1,0 +1,66 @@
+services:
+
+  mysql:
+    image: 'mysql:latest'
+    environment:
+      - 'MYSQL_DATABASE=magdatabase'
+      - 'MYSQL_PASSWORD=magpwd'
+      - 'MYSQL_ROOT_PASSWORD=magpwd'
+      - 'MYSQL_USER=maguser'
+    ports:
+      # <Port exposed> : <MySQL Port running inside container>
+      - '3306:3306'
+    expose:
+      # Opens port 3306 on the container
+      - '3306'
+
+
+#  postgres:
+#    image: 'postgres:latest'
+#    environment:
+#      - 'POSTGRES_DB=magdatabase'
+#      - 'POSTGRES_PASSWORD=magpwd'
+#      - 'POSTGRES_USER=maguser'
+#    ports:
+#      - '5432'
+
+  prometheus:
+    container_name: prometheus
+    image: prom/prometheus
+    restart: unless-stopped
+    extra_hosts:
+      - host.docker.internal:host-gateway
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+    volumes:
+      - ./data/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+
+
+  #  node-exporter:
+  #    image: prom/node-exporter:latest
+  #    network_mode: host
+  #    container_name: monitoring_node_exporter
+  #    restart: unless-stopped
+  #    expose:
+  #      - 9100
+
+  grafana:
+    image: grafana/grafana
+    #    pull_policy: always
+    #    network_mode: host
+    container_name: grafana
+    #    restart: unless-stopped
+    #    user: root
+    ports:
+      - "3000:3000" # access grafana url
+#    volumes:
+#      - ./data/grafana:/var/lib/grafana
+#    environment:
+#      - GF_SECURITY_ADMIN_PASSWORD=admin
+#      - GF_USERS_ALLOW_SIGN_UP=false
+#      - GF_SERVER_DOMAIN=localhost
+#      # Enabled for logging
+#      - GF_LOG_MODE=console file
+#      - GF_LOG_FILTERS=alerting.notifier.slack:debug alertmanager:debug ngalert:debug
