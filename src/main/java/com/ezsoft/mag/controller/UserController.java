@@ -30,4 +30,14 @@ public class UserController {
     public List<User> getUserByDateRange(@PathVariable("start") String start, @PathVariable("end") String end) {
         return repository.findByDateCreatedBetween(Date.valueOf(start), Date.valueOf(end));
     }
+
+    /**
+     * Custom endpoint. Grabs all Users with the given city.
+     * @param city The city to search on.
+     * @return List of users matching the given city.
+     */
+    @GetMapping("/user/city/{city}")
+    public List<User> getUserByCity(@PathVariable("city") String city) {
+        return repository.findByCity(city);
+    }
 }
