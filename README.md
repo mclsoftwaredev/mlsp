@@ -17,7 +17,7 @@ I used IntelliJ as my IDE and Spring Boot 3.0.\
 The project auto loads Docker images of Grafana, Prometheus and MySql.\
 Prometheus is used, along with spring actuators, to scrape metrics from the system at runtime while Grafana is used to visualize and monitor this data graphically.\
 \
-I used the Grafana template 19004: Spring Boot 3.x Statistics
+I used the Grafana template 19004: Spring Boot 3.x Statistics\
 \
 MySql is used as the database in this project.\
 \
@@ -57,7 +57,7 @@ API Example: https://ibb.co/bgYL3mn
 \
 Login: https://ibb.co/wgjdMX6
 \
-\
+
 ## Answer the following questions:
 
 ### How would you change the project or approach?
