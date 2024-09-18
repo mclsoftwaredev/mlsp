@@ -1,4 +1,4 @@
-package com.ezsoft.mag.data;
+package com.ezsoft.mlsp.data;
 
 import java.sql.Date;
 import java.util.List;

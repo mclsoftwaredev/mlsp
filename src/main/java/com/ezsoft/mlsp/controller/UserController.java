@@ -1,11 +1,11 @@
-package com.ezsoft.mag.controller;
+package com.ezsoft.mlsp.controller;
 
-import com.ezsoft.mag.data.UserRepository;
+import com.ezsoft.mlsp.data.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
-import com.ezsoft.mag.data.User;
+import com.ezsoft.mlsp.data.User;
 
 import java.sql.Date;
 import java.util.List;

@@ -15,6 +15,6 @@ buildNumber.properties
 .project
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
-/magservice.log
+/mlspservice.log
 /.idea/
 /magservice.log.*

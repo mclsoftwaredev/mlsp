@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.ezsoft</groupId>
-	<artifactId>mag</artifactId>
+	<artifactId>mlsp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>mag</name>
 	<description>Mag Mutual Take Home</description>

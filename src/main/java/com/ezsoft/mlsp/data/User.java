@@ -1,4 +1,4 @@
-package com.ezsoft.mag.data;
+package com.ezsoft.mlsp.data;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
