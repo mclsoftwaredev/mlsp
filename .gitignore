@@ -17,4 +17,4 @@ buildNumber.properties
 .classpath
 /mlspservice.log
 /.idea/
-/magservice.log.*
+/mlspservice.log.*

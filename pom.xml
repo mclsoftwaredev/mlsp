@@ -11,8 +11,8 @@
 	<groupId>com.ezsoft</groupId>
 	<artifactId>mlsp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>mag</name>
-	<description>Mag Mutual Take Home</description>
+	<name>mlsp</name>
+	<description>Michael Lee Sample Project</description>
 	<url/>
 	<licenses>
 		<license/>
