@@ -3,9 +3,7 @@
 Author: Michael Lee\
 Email: mclsoftwaredev@gmail.com\
 \
-Mag Mutual
-\
-Given the take home project, I have built out a fully functional spring boot microservices project.\
+I have built out a fully functional spring boot microservices project.\
 \
 To build use maven:\
 `mvn clean install -DskipTests=true`
